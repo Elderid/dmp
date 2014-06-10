@@ -45,7 +45,7 @@ public class HibernateUtil {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		ManagedSessionContext.bind((org.hibernate.Session) session);
 
-		// On gère manuellement le flush pour éviter que Hibernate le fasse quand on fait un Criteria.list().
+		// On gère manuellement le flush pour �viter que Hibernate le fasse quand on fait un Criteria.list().
 		session.setFlushMode(FlushMode.MANUAL);
 		session.beginTransaction();
 

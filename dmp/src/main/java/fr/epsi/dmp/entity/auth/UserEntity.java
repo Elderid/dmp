@@ -5,15 +5,22 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import fr.epsi.dmp.entity.AbstractEntity;
-
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "USER")
+@Entity
+@Table(name="USERS")
+/**
+ * 
+ * @author David
+ * 
+ * Entity pour l'authentification
+ */
 public class UserEntity extends AbstractEntity implements Serializable {
 
 	/**

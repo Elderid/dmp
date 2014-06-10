@@ -8,7 +8,7 @@ import lombok.Setter;
 /**
  * Parent de toutes les classes ayant des champ de tracking(date de creation, modification, utilisateur ayant modifie...).
  * 
- * @author arolin
+ * @author David
  * 
  */
 @Getter
