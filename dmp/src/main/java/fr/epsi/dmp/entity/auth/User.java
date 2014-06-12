@@ -21,7 +21,7 @@ import lombok.Setter;
  * 
  * Entity pour l'authentification
  */
-public class UserEntity extends AbstractEntity implements Serializable {
+public class User extends AbstractEntity implements Serializable {
 
 	/**
 	 * 
