@@ -22,8 +22,8 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 		<property name="annotatedClasses">
 			<list>
-				<value>fr.dmp.entity.auth.UserEntity</value>
-				
+				<value>fr.dmp.entity.auth.User</value>
+				<value>fr.dmp.entity.auth.Patient</value>
 			</list>
 		</property>
 
