@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 import fr.epsi.dmp.entity.AbstractEntity;
-import fr.epsi.dmp.entity.generalites.PatientEntity;
+import fr.epsi.dmp.entity.generalites.Patient;
 import fr.epsi.dmp.entity.pathoAllergieAntecedent.PathoLongCoursEntity;
 
 @Getter
@@ -30,7 +30,7 @@ public class CoordonneeEntity extends AbstractEntity implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name = "P_IDPATIENT", nullable = false)
-	protected PatientEntity patient;
+	protected Patient patient;
 	
 	@ManyToOne
 	@JoinColumn(name="PLC_IDPATHODIAGNOSTIC", nullable=false)

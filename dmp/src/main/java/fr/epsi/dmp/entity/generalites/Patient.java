@@ -6,19 +6,23 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 import lombok.Getter;
 import lombok.Setter;
 import fr.epsi.dmp.entity.AbstractEntity;
+import fr.epsi.dmp.entity.auth.User;
 import fr.epsi.dmp.entity.utils.CoordonneeEntity;
 
 
 @Getter
 @Setter
 @Entity (name = "PATIENT")
-public class PatientEntity extends AbstractEntity implements Serializable{
+public class Patient extends AbstractEntity implements Serializable{
 
 	/**
 	 * 
@@ -46,6 +50,9 @@ public class PatientEntity extends AbstractEntity implements Serializable{
 	@OneToMany(mappedBy = "COORDONNEE")
 	protected List<CoordonneeEntity> coordonnees;
 		
+	@OneToOne(fetch = FetchType.LAZY)
+	@PrimaryKeyJoinColumn
+	public User user;
 	
 	
 }
