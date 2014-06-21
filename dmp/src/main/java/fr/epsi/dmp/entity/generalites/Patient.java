@@ -1,12 +1,13 @@
 package fr.epsi.dmp.entity.generalites;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -20,15 +21,10 @@ import fr.epsi.dmp.entity.utils.CoordonneeEntity;
 @Getter
 @Setter
 @Entity (name = "PATIENT")
-public class Patient implements Serializable{
+public class Patient{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2094621643716156227L;
-
-	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name ="IDPATIENT")
 	protected Long id;
 	

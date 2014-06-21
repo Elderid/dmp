@@ -5,6 +5,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
+
+
 import fr.epsi.dmp.dao.AbstractDao;
 import fr.epsi.dmp.dao.PatientDao;
 import fr.epsi.dmp.entity.generalites.Patient;
@@ -18,38 +20,11 @@ public class PatientDaoImpl extends AbstractDao<Patient, Long> implements Patien
 	public PatientDaoImpl(){
 		super();
 	}
-	
-	
-	@Override
-	public List<Patient> list(Class<Patient> c) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
 	public Patient find(Long id) {
 		return this.find(Patient.class, id);
 	}
 
-	@Override
-	public Long create(Patient obj) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void update(Patient obj) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void delete(Patient obj) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public Patient findByName(String name) {
 		try{
 			return (Patient) getHibernateTemplate().find("from patient u where u.name =?", name).get(0);
@@ -58,5 +33,17 @@ public class PatientDaoImpl extends AbstractDao<Patient, Long> implements Patien
 			return null;
 		}
 	}
+	
+	
+	@Override
+	public List<Patient> list(Class<Patient> c) {
+		return null;
+		
+	}
+
+
+
+	
+	
 
 }

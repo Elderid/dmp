@@ -1,7 +1,5 @@
 package fr.epsi.dmp.entity.auth;
 
-import java.io.Serializable;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,13 +11,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-
-
-
-
-import fr.epsi.dmp.entity.generalites.Patient;
 import lombok.Getter;
 import lombok.Setter;
+import fr.epsi.dmp.entity.generalites.Patient;
 
 @Getter
 @Setter
@@ -31,14 +25,8 @@ import lombok.Setter;
  * 
  * Entity pour l'authentification
  */
-public class User implements Serializable {
+public class User{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -2475167120819188520L;
-
-		
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "IDUSER", nullable=false)

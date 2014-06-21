@@ -14,4 +14,5 @@ public abstract class HibernateSessionUtils extends HibernateDaoSupport {
 	{
 		setSessionFactory(sessionFactory);
 	}
+
 }
