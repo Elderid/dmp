@@ -17,12 +17,11 @@ public class PatientDaoImpl extends AbstractDao<Patient, Long> implements Patien
 		super();
 	}
 
-	@Override
 	public Patient find(Long id) {
 		return this.find(Patient.class, id);
 	}
 
-	@Override
+
 	public Patient findByName(String name) {
 		try{
 			return (Patient) getHibernateTemplate().find("from patient u where u.name =?", name).get(0);
