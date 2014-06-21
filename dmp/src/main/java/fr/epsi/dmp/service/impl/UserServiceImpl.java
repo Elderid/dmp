@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import fr.dct.common.CipherUtils;
+import fr.epsi.dmp.common.CipherUtils;
 import fr.epsi.dmp.dao.UserDao;
 import fr.epsi.dmp.entity.auth.User;
 import fr.epsi.dmp.service.UserService;
