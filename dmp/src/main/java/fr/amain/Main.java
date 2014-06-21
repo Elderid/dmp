@@ -12,7 +12,7 @@ public class Main {
     {
     	@SuppressWarnings("resource")
 		ApplicationContext appContext = 
-    	  new ClassPathXmlApplicationContext("fr/spring/applicationContext.xml");
+    	  new ClassPathXmlApplicationContext("spring/applicationContext.xml");
  
     	UserDao userDao = (UserDao)appContext.getBean("userDao");
  
