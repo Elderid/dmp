@@ -9,12 +9,12 @@ import javax.persistence.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
-import fr.epsi.dmp.entity.AbstractEntity;
+
 
 @Getter
 @Setter
 @Entity(name="NAISSANCE")
-public class NaissanceEntity extends AbstractEntity implements Serializable{
+public class NaissanceEntity  implements Serializable{
 
 	/**
 	 * 

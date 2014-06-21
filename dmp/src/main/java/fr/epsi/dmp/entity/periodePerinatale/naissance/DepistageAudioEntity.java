@@ -9,7 +9,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 
-import fr.epsi.dmp.entity.AbstractEntity;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name = "DEPISTAGEAUDIO")
-public class DepistageAudioEntity extends AbstractEntity implements Serializable {
+public class DepistageAudioEntity implements Serializable {
 
 	/**
 	 * 

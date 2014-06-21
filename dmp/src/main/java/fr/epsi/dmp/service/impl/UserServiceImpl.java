@@ -1,4 +1,4 @@
-package fr.epsi.dmp.services.impl;
+package fr.epsi.dmp.service.impl;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import fr.dct.common.CipherUtils;
 import fr.epsi.dmp.dao.UserDao;
 import fr.epsi.dmp.entity.auth.User;
-import fr.epsi.dmp.services.UserService;
+import fr.epsi.dmp.service.UserService;
 
 
 

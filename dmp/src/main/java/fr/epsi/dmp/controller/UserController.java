@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import fr.epsi.dmp.services.UserService;
+import fr.epsi.dmp.service.UserService;
 
 
 

@@ -7,15 +7,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import fr.epsi.dmp.entity.AbstractEntity;
-
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity(name="ALLERGIES")
-public class AllergiesEntity  extends AbstractEntity implements Serializable{
+public class AllergiesEntity  implements Serializable{
 
 	/**
 	 * 

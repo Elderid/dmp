@@ -10,11 +10,9 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 
 import lombok.Getter;
 import lombok.Setter;
-import fr.epsi.dmp.entity.AbstractEntity;
 import fr.epsi.dmp.entity.auth.User;
 import fr.epsi.dmp.entity.utils.CoordonneeEntity;
 
@@ -22,7 +20,7 @@ import fr.epsi.dmp.entity.utils.CoordonneeEntity;
 @Getter
 @Setter
 @Entity (name = "PATIENT")
-public class Patient extends AbstractEntity implements Serializable{
+public class Patient implements Serializable{
 
 	/**
 	 * 
@@ -32,7 +30,7 @@ public class Patient extends AbstractEntity implements Serializable{
 	
 	@Id
 	@Column(name ="IDPATIENT")
-	protected Integer id;
+	protected Long id;
 	
 	@Column(name = "NOM", nullable = false)
 	protected String nom;
@@ -50,8 +48,7 @@ public class Patient extends AbstractEntity implements Serializable{
 	@OneToMany(mappedBy = "COORDONNEE")
 	protected List<CoordonneeEntity> coordonnees;
 		
-	@OneToOne(fetch = FetchType.LAZY)
-	@PrimaryKeyJoinColumn
+	@OneToOne(fetch = FetchType.LAZY, mappedBy=("patient"))
 	public User user;
 	
 	

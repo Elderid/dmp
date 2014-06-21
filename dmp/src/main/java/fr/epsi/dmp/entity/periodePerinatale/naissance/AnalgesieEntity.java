@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import fr.epsi.dmp.entity.AbstractEntity;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="ANALGESIEACCOUCHEMENT")
-public class AnalgesieEntity extends AbstractEntity implements Serializable{
+public class AnalgesieEntity  implements Serializable{
 
 	/**
 	 * 

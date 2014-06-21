@@ -9,13 +9,14 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 
 
 
-import fr.epsi.dmp.entity.AbstractEntity;
+
 import fr.epsi.dmp.entity.generalites.Patient;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,7 +31,7 @@ import lombok.Setter;
  * 
  * Entity pour l'authentification
  */
-public class User extends AbstractEntity implements Serializable {
+public class User implements Serializable {
 
 	/**
 	 * 
@@ -52,6 +53,7 @@ public class User extends AbstractEntity implements Serializable {
 	
 	
 	@OneToOne(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
+	@JoinColumn(name="IDPATIENT")
 	public Patient patient;
 	
 }

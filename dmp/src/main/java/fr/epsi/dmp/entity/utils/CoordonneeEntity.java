@@ -10,14 +10,14 @@ import javax.persistence.ManyToOne;
 
 import lombok.Getter;
 import lombok.Setter;
-import fr.epsi.dmp.entity.AbstractEntity;
+
 import fr.epsi.dmp.entity.generalites.Patient;
 import fr.epsi.dmp.entity.pathoAllergieAntecedent.PathoLongCoursEntity;
 
 @Getter
 @Setter
 @Entity(name = "COORDONNEE")
-public class CoordonneeEntity extends AbstractEntity implements Serializable {
+public class CoordonneeEntity  implements Serializable {
 
 	/**
 	 * 

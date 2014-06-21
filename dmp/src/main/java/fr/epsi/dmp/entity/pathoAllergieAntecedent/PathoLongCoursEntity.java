@@ -9,7 +9,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import fr.epsi.dmp.entity.AbstractEntity;
 import fr.epsi.dmp.entity.utils.CoordonneeEntity;
 
 import lombok.Getter;
@@ -19,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity (name = "PATHOLONGCOURS")
-public class PathoLongCoursEntity extends AbstractEntity implements Serializable {
+public class PathoLongCoursEntity implements Serializable {
 
 	/**
 	 * 

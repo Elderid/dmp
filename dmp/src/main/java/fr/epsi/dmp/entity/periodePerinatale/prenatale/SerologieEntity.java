@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import fr.epsi.dmp.entity.AbstractEntity;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="SEROLOGIE")
-public class SerologieEntity extends AbstractEntity implements Serializable{
+public class SerologieEntity  implements Serializable{
 
 	/**
 	 * 

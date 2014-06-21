@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import fr.epsi.dmp.entity.AbstractEntity;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="PARENTS")
-public class ParentsEntity extends AbstractEntity implements Serializable{
+public class ParentsEntity  implements Serializable{
 
 	/**
 	 * 

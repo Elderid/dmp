@@ -1,4 +1,4 @@
-package fr.epsi.dmp.services;
+package fr.epsi.dmp.service;
 
 import java.util.List;
 
