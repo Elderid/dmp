@@ -19,19 +19,14 @@ public class UserDaoImpl extends AbstractDao<User, Long> implements UserDao {
 	}
 
 
-
-	public Long create(User obj) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
+	@Override
 	public User find(Long id) {
 		return this.find(User.class, id);
 	}
 
 
 
+	@Override
 	public User findByIdentifiant(String identifiant) {
 		try{
 			return (User) getHibernateTemplate().find("from users u where u.identifiant =?", identifiant).get(0);

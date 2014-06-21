@@ -38,9 +38,9 @@ public class UserServiceImpl implements UserService {
 		return userDao.findByIdentifiant(identifiant);
 	}
 
-	public boolean passwordConfirmMatchPassword(String password,
-			String passwordConfirm) {
-		// TODO Auto-generated method stub
+	public boolean passwordConfirmMatchPassword(String password,String passwordConfirm) {
+		if(password.equals(passwordConfirm))
+			return true;
 		return false;
 	}
 
