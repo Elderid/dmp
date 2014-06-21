@@ -7,7 +7,7 @@ import java.text.ParseException;
 import org.junit.Before;
 import org.junit.Test;
 
-import fr.dct.common.CipherUtils;
+import fr.epsi.dmp.common.CipherUtils;
 import fr.epsi.dmp.entity.auth.User;
 import fr.epsi.dmp.entity.generalites.Patient;
 
