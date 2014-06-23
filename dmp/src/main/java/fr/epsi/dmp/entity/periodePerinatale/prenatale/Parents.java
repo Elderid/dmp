@@ -18,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="PARENTS")
-public class ParentsEntity  implements Serializable{
+public class Parents  implements Serializable{
 
 	/**
 	 * 
@@ -30,7 +30,7 @@ public class ParentsEntity  implements Serializable{
 	protected Integer idInteger;
 	
 	@OneToMany(mappedBy = "SEROLOGIE")
-	protected List<SerologieEntity> serologies;
+	protected List<Serologie> serologies;
 	
 	@Column(name="NOM", nullable=false)
 	protected String nom;

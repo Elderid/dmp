@@ -19,7 +19,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name = "EXAMBIODEPISTAGE")
-public class ExamenBioDepistageEntity  implements Serializable {
+public class ExamenBioDepistage  implements Serializable {
 
 	/**
 	 * 

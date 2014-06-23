@@ -19,7 +19,7 @@ import lombok.Setter;
  * @author ElderId 31 mars 2014
  */
 @Entity(name = "EXAMENOPHTALMOLOGIQUE")
-public class ExamenOphtalmoEntity  implements Serializable {
+public class ExamenOphtalmo  implements Serializable {
 
 	/**
 	 * 

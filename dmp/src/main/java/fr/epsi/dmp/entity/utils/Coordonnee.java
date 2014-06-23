@@ -12,12 +12,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 import fr.epsi.dmp.entity.generalites.Patient;
-import fr.epsi.dmp.entity.pathoAllergieAntecedent.PathoLongCoursEntity;
+import fr.epsi.dmp.entity.pathoAllergieAntecedent.PathoLongCours;
 
 @Getter
 @Setter
 @Entity(name = "COORDONNEE")
-public class CoordonneeEntity  implements Serializable {
+public class Coordonnee  implements Serializable {
 
 	/**
 	 * 
@@ -34,15 +34,15 @@ public class CoordonneeEntity  implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="PLC_IDPATHODIAGNOSTIC", nullable=false)
-	protected PathoLongCoursEntity diagnosticMedecin;
+	protected PathoLongCours diagnosticMedecin;
 	
 	@ManyToOne
 	@JoinColumn(name="PLC_IDPATHOETABLISSEMENT", nullable=true)
-	protected PathoLongCoursEntity etablissement;
+	protected PathoLongCours etablissement;
 	
 	@ManyToOne
 	@JoinColumn(name="PLC_IDPATHOURGENCE", nullable=false)
-	protected PathoLongCoursEntity urgenceMedecin;
+	protected PathoLongCours urgenceMedecin;
 	
 	@Column(name="NUMERO", nullable=false)
 	protected Integer num;

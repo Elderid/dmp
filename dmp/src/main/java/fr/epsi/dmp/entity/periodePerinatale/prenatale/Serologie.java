@@ -17,7 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="SEROLOGIE")
-public class SerologieEntity  implements Serializable{
+public class Serologie  implements Serializable{
 
 	/**
 	 * 
@@ -40,5 +40,5 @@ public class SerologieEntity  implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name="PARENT_IDPARENTS", nullable=false)
-	protected ParentsEntity parents;
+	protected Parents parents;
 }

@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="NAISSANCE")
-public class NaissanceEntity  implements Serializable{
+public class Naissance  implements Serializable{
 
 	/**
 	 * 
@@ -62,34 +62,34 @@ public class NaissanceEntity  implements Serializable{
 	protected Boolean fievreMaternelle;
 	
 	@OneToOne(optional=false)
-	protected GestesPratiqueEntity gestePratique;
+	protected GestesPratique gestePratique;
 	
 	@OneToOne(optional=false)
-	protected PresentationEntity presentation;
+	protected Presentation presentation;
 	
 	@OneToOne(optional=false)
-	protected TravailEntity travail;
+	protected Travail travail;
 	
 	@OneToOne(optional=false)
-	protected AnalgesieEntity analgesie;
+	protected Analgesie analgesie;
 	
 	@OneToOne(optional=false)
-	protected TypeNaissanceEntity typeNaissance;
+	protected TypeNaissance typeNaissance;
 	
 	@OneToOne(optional=false)
-	protected LiquideAmniotiqueEntity liquideAmniotique;
+	protected LiquideAmniotique liquideAmniotique;
 	
 	@OneToOne(optional=false)
-	protected ExamenCliniqueEntity examenClinique;
+	protected ExamenClinique examenClinique;
 	
 	@OneToOne(optional=false)
-	protected ExamenOphtalmoEntity examenOphtalmo;
+	protected ExamenOphtalmo examenOphtalmo;
 
 	@OneToOne(optional=false)
-	protected DepistageAudioEntity depistageAudio;
+	protected DepistageAudio depistageAudio;
 	
 	@OneToOne(optional=false)
-	protected ExamenBioDepistageEntity depistageBiologique;
+	protected ExamenBioDepistage depistageBiologique;
 	
 	
 	

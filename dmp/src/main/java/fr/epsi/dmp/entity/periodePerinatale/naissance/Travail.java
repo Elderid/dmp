@@ -13,19 +13,24 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name="ANALGESIEACCOUCHEMENT")
-public class AnalgesieEntity  implements Serializable{
+@Entity(name="TRAVAILACCOUCHEMENT")
+public class Travail  implements Serializable{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5741381846007641228L;
+	private static final long serialVersionUID = 2872144334185261502L;
 
 	@Id
-	@Column(name="IDANALGESIE", nullable=false)
+	@Column(name="IDTRAVAIL", nullable=false)
 	protected Integer id;
 	
-	@Column(name="libelle", nullable=false)
+	@Column(name="LIBELLE",nullable=false)
 	protected String libelle;
+	
+	@Column(name="RUPTURE", nullable=false)
+	protected Boolean rupture;
+	
+	
 	
 }

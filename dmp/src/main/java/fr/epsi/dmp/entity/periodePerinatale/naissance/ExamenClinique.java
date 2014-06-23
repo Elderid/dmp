@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="EXAMENCLINIQUENAISSANCE")
-public class ExamenCliniqueEntity  implements Serializable{
+public class ExamenClinique  implements Serializable{
 
 	/**
 	 * 

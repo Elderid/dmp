@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import fr.epsi.dmp.entity.utils.CoordonneeEntity;
+import fr.epsi.dmp.entity.utils.Coordonnee;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +18,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity (name = "PATHOLONGCOURS")
-public class PathoLongCoursEntity implements Serializable {
+public class PathoLongCours implements Serializable {
 
 	/**
 	 * 
@@ -37,13 +37,13 @@ public class PathoLongCoursEntity implements Serializable {
 	protected Date date;
 	
 	@OneToMany(mappedBy = "COORDONNEEMEDECIN")
-	protected List<CoordonneeEntity> diagnosticMedecin;
+	protected List<Coordonnee> diagnosticMedecin;
 	
 	@OneToMany(mappedBy="COORDONNEEETABLISSEMENT")
-	protected List<CoordonneeEntity> etablissements;
+	protected List<Coordonnee> etablissements;
 	
 	@OneToMany(mappedBy="COORDONNEEMEDECINURGENCE")
-	protected List<CoordonneeEntity> urgenceMedecin;
+	protected List<Coordonnee> urgenceMedecin;
 	
 	
 }

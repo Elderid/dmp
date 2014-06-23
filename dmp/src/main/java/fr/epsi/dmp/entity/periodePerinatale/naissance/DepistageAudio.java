@@ -21,7 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name = "DEPISTAGEAUDIO")
-public class DepistageAudioEntity implements Serializable {
+public class DepistageAudio implements Serializable {
 
 	/**
 	 * 

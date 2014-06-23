@@ -15,7 +15,7 @@ import javax.persistence.OneToOne;
 import lombok.Getter;
 import lombok.Setter;
 import fr.epsi.dmp.entity.auth.User;
-import fr.epsi.dmp.entity.utils.CoordonneeEntity;
+import fr.epsi.dmp.entity.utils.Coordonnee;
 
 
 @Getter
@@ -42,7 +42,7 @@ public class Patient{
 	
 	
 	@OneToMany(mappedBy = "COORDONNEE")
-	protected List<CoordonneeEntity> coordonnees;
+	protected List<Coordonnee> coordonnees;
 		
 	@OneToOne(fetch = FetchType.LAZY, mappedBy=("patient"))
 	public User user;

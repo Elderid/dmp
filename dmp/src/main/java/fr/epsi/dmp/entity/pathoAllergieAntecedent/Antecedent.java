@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="ANTECEDENT")
-public class AntecedentEntity  implements Serializable{
+public class Antecedent  implements Serializable{
 
 	/**
 	 * 

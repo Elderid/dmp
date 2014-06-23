@@ -13,7 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="ALLERGIES")
-public class AllergiesEntity  implements Serializable{
+public class Allergies  implements Serializable{
 
 	/**
 	 * 

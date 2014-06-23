@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name="PRESENTATIONACCOUCHEMENT")
-public class PresentationEntity {
+public class Presentation {
 
 	@Id
 	@Column(name="IDPRESENTATION", nullable=false)

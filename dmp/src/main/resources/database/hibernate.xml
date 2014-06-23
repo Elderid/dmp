@@ -24,6 +24,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 			<list>
 				<value>fr.epsi.dmp.entity.auth.User</value>
 				<value>fr.epsi.dmp.entity.generalites.Patient</value>
+				<!-- <value>fr.epsi.dmp.entity.utils.Coordonnee</value> -->
 			</list>
 		</property>
 
