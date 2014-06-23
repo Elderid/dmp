@@ -19,6 +19,8 @@
 		<org.hibernate.annotation.version>3.5.6-Final</org.hibernate.annotation.version>
 		<org.hibernate.javax.persistence.version>1.0.1.Final</org.hibernate.javax.persistence.version>
 		<mysql-connector-java.version>5.1.30</mysql-connector-java.version>
+		<commons-codec.version>1.8</commons-codec.version>
+		<org.hsqldb.version>2.0.0</org.hsqldb.version>
 
 		<!-- Version des dépendances des bibliothèques transverses -->
 		<antlr.version>2.7.7</antlr.version>
@@ -30,10 +32,14 @@
 		<org.projectlombok.version>1.14.0</org.projectlombok.version>
 		<org.slf4j.version>1.7.7</org.slf4j.version>
 		<org.log4j.version>1.2.12</org.log4j.version>
-
-		<!-- Version de Apache Commons Upload -->
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
 		<commons-io.version>2.4</commons-io.version>
+
+		<!-- version des dépendances de la couches de présentation -->
+		<javax.servlet.version>2.5</javax.servlet.version>
+		<jstl.version>1.2</jstl.version>
+		<taglibs.version>1.1.2</taglibs.version>
+
 
 		<!-- Version des dépendances des bibliothèques de tests -->
 		<junit.junit.version>4.11</junit.junit.version>
@@ -109,6 +115,17 @@
 			<version>${mysql-connector-java.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons-codec.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>${org.hsqldb.version}</version>
+		</dependency>
 
 		<!-- Dépendances des bibliothèques transverses -->
 		<dependency>
@@ -164,37 +181,6 @@
 			<version>${org.slf4j.version}</version>
 		</dependency>
 
-
-		<!-- Hibernate library dependecy end -->
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.8</version>
-		</dependency>
-		<!-- HSQLDB -->
-		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
-			<version>2.0.0</version>
-		</dependency>
-		<!-- Servlet -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>taglibs</groupId>
-			<artifactId>standard</artifactId>
-			<version>1.1.2</version>
-		</dependency>
-
 		<!-- Apache Commons Upload -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -208,6 +194,27 @@
 			<artifactId>commons-io</artifactId>
 			<version>${commons-io.version}</version>
 		</dependency>
+
+
+		<!-- dépendances de la couches de présentation -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${javax.servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>${taglibs.version}</version>
+		</dependency>
+
+		<!--  dépendances de la couche de test -->
 
 		<dependency>
 			<groupId>junit</groupId>
