@@ -13,7 +13,6 @@ public abstract class AbstractDao<T, PK extends Serializable> extends HibernateS
 	/**
 	 * Find an object by PK
 	 */
-	@SuppressWarnings("unchecked")
 	public T find(Class<T> c, PK id) {
 		return (T) getHibernateTemplate().get(c, id);
 	}
