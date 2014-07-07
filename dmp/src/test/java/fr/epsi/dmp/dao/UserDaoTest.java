@@ -53,7 +53,7 @@ public class UserDaoTest extends AbstractDaoTest {
 
 	@Test
 	public void testFindByidentifiant() {
-		assertTrue(userDao.findByIdentifiant("select@campus.fr").getIdentifiant().equals("SelectIdentifiant"));
+		assertTrue(userDao.findByIdentifiant("toto").getIdentifiant().equals("SelectIdentifiant"));
 	}
 
 }

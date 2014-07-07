@@ -18,10 +18,12 @@ public class UserDaoImpl extends AbstractDao<User, Long> implements UserDao {
 		super();
 	}
 
+	@Override
 	public User find(Long id) {
 		return this.find(User.class, id);
 	}
 
+	@Override
 	public User findByIdentifiant(String identifiant) {
 		try{
 			return (User) getHibernateTemplate().find("from users u where u.identifiant =?", identifiant).get(0);
