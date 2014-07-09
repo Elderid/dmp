@@ -5,7 +5,6 @@ import java.util.List;
 import fr.epsi.dmp.entity.auth.User;
 
 
-
 public interface UserDao {
 
 	/**
